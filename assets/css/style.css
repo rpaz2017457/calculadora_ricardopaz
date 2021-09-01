@@ -1,0 +1,93 @@
+* {
+    font-family: Century Gothic , CenturyGothic , AppleGothic , sans-serif; 
+    color: #ffff;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: lightskyblue;
+}
+
+#valorAhora {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#valorAnterior {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4,85px);
+    grid-template-rows: 170px repeat(5, 85px);
+    background-color: lightseagreen;
+    padding: 16px;
+    border-radius: 25px;
+    box-shadow: 15px 10px 0px 5px teal;
+}
+
+.colArriba {
+    grid-column: span 2;
+    background-color: rgb(17, 72, 117);
+    box-shadow: 13px 8px 0px -3px rgb(4, 35, 59);
+}
+
+.colAbajo {
+    grid-column: span 2;
+}
+
+.operador {
+    background-color: rgb(17, 72, 117);
+    box-shadow: 13px 8px 0px -3px rgb(4, 35, 59);
+}
+
+button {
+    cursor: pointer;
+    margin: 4px;
+    padding: 0;
+    border-radius: 15px;
+    font-size: 1.8em;
+    border: none;
+    background-color: rgb(16, 148, 148);
+    box-shadow: 13px 8px 0px -3px teal;
+}
+
+button:active {
+    background-color: cadetblue;
+}
+
+button:focus {
+    outline: none;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    padding: 10px;
+    display: flex;
+    margin: 11px 11px 18px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: darkslategrey;
+    border-radius: 19px;
+    color: white;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+.footer{
+    font-family: Century Gothic , CenturyGothic , AppleGothic , sans-serif; 
+    font-size: 14px;
+    color: #162538    ;
+    text-align: center;
+}
